@@ -8,18 +8,10 @@
 <body>
 
     <video id="camera" autoplay></video>
-    <button onclick="ouvrirCamera()">Ouvrir la caméra</button>
-    <script>
-        async function ouvrirCamera(){
-            const video = document.getElementById('camera');
-            const stream = await navigator.mediaDevices.getUserMedia({
-                video: true,
-                audio: false
-            })
-            video.srcObject = stream;
-        }
-
-    </script>
-    
+    <button id="ouvrirCamera">Ouvrir la caméra</button>
+    <p id="resultat">Resultat : camera fermer</p>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script type="module" src="camera.js"></script>
 </body>
 </html>
