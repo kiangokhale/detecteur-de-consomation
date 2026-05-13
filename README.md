@@ -1,0 +1,1 @@
+# detecteur-de-consomation
