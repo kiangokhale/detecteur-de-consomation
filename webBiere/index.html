@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav {
+            display:flex;
+            gap: 40px;
+            background-color: red;
+            padding: 10px;
+            justify-content: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
+        
+        .milieu {
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 50px;
+
+            background-image: url('all.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: lightgray;
+
+            object-fit: cover;
+            height: 100vh;
+        }
+    
+
+        .textHaut{
+            text-align: center;
+        }
+       
+        .milieu button{
+            width: 200px;
+            height: 70px;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+        .milieu h1{
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+            width: 30vw;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="textHaut">
+        <h1> Bienvenue sur le détecteur de consommation </h1>
+    </div>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="camera.html">Camera</a>
+    </nav>
+        <div class="milieu">
+            <h1> 
+                nous somme la pour vous aider a vous replacer sur vos pied, rester solitaire suiver les etapes et tou va bien aller. Mes collegues et moi sont tous la et pret a prendre action a nimporte quel moment!
+            </h1>
+            <button onclick="window.location.href='camera.html'">
+                Cliquer ici pour commencer
+            </button>
+        </div>
+
+
+
+
+</body>
+</html>
