@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <video id="camera" autoplay></video>
+    <button onclick="ouvrirCamera()">Ouvrir la caméra</button>
+    <script>
+        async function ouvrirCamera(){
+            const video = document.getElementById('camera');
+            const stream = await navigator.mediaDevices.getUserMedia({
+                video: true,
+                audio: false
+            })
+            video.srcObject = stream;
+        }
+
+    </script>
+    
+</body>
+</html>
